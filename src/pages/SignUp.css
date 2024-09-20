@@ -1,0 +1,148 @@
+/* .container{
+    display: flex;
+    background-color: white;
+    height: 100vh;
+}
+.logo{
+    width: 50vw;
+}
+.logo img{
+    width: 50vw;
+    height: 100vh;
+}
+.logo p{
+    margin-top: -12rem;
+    color: white;
+    font-size: 3rem;
+    padding-left: 2rem;
+}
+.signup {
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0px;
+    background-color: black;
+
+}
+.signup #LogoName{
+    color: rgba(114, 219, 115, 1);
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 0;
+    padding: 5px;
+    
+   
+    
+
+}
+#heading{
+    text-align: center;
+    color:rgba(255, 255, 255, 1);
+    border: none;
+    
+    margin: 0px;
+   
+}
+.signup p{
+    text-align: left;
+    color:rgba(255, 255, 255, 1);
+    border: none;
+    height: 3.5rem;
+    width: 26rem;
+    
+    
+    
+
+
+}
+span{
+    color: rgba(114, 219, 115, 1);
+}
+  
+ */
+
+ /* Base styles */
+.container {
+    display: flex;
+    background-color: white;
+    height: 100vh;
+}
+
+.logo {
+    width: 50vw;
+}
+
+.logo img {
+    width: 100%; /* Make image width 100% of its container */
+    height: 100vh; /* Ensure it scales proportionally */
+}
+
+.logo p {
+    margin-top: -12rem;
+    color: white;
+    font-size: 3rem;
+    padding-left: 2rem;
+}
+
+.signup {
+    width: 50vw;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem; /* Added some spacing between elements */
+    background-color: black;
+}
+
+.signup #LogoName {
+    color: rgba(114, 219, 115, 1);
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 0;
+    padding: 5px;
+}
+
+#heading {
+    text-align: center;
+    color: rgba(255, 255, 255, 1);
+    margin: 0px;
+}
+
+.signup p {
+    text-align: left;
+    color: rgba(255, 255, 255, 1);
+    border: none;
+    height: auto; /* Set height to auto for responsiveness */
+    width: 90%; /* Adjust width for better responsiveness */
+}
+
+#tnc {
+    color: rgba(114, 219, 115, 1);
+}
+#privacy_policy {
+    color: rgba(114, 219, 115, 1);
+}
+
+/* Media queries for responsiveness */
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .logo, .signup {
+        width: 100vw; /* Make both sections take full width on smaller screens */
+    }
+
+    .logo img {
+        height: auto; /* Scale the image */
+        margin-top: 1rem; /* Adjust margin for smaller screens */
+    }
+
+    .signup p {
+        width: 90%; /* Ensure width adjusts on smaller screens */
+    }
+}

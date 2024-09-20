@@ -1,0 +1,129 @@
+/* form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    align-items: center;
+    color: white;
+    position: relative;
+}
+input{
+    background-color: rgba(41, 41, 41, 1);
+    width: 25rem;
+    height: 2rem;
+    border-radius: 2px;
+    border: none;
+    padding-left:3rem;
+    font-size: 1.25rem;
+    color: white;
+    
+}
+.checkbox{
+    display: flex;
+    align-items: left;
+    border: none;
+    width: 25rem;
+    
+}
+.checkbox input{
+    height: 1.25rem;
+    width: 1rem;
+    border: none;
+}
+.checkbox label{
+    font-size: 1.25rem;
+}
+button{
+    background-color: rgba(114, 219, 115, 1);
+    text-align: center;
+    width: 25rem;
+    height: 3rem;
+    color: white;
+    border-radius: 2rem;
+    font-size: 1.5rem;
+    font-weight: bolder;
+}
+span{
+    color: red;
+} */
+
+/* Base styles */
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: .5rem;
+    align-items: center;
+    color: white;
+    position: relative;
+}
+
+input {
+    background-color: rgba(41, 41, 41, 1);
+    width: 100%; /* Set width to 100% to be responsive */
+    max-width: 25rem; /* Limit max width */
+    height: 2rem;
+    border-radius: 2px;
+    border: none;
+    padding-left: 1rem; /* Adjust padding */
+    font-size: 1.25rem;
+    color: white;
+    margin-bottom: 0px;
+   
+}
+
+.checkbox {
+    display: flex;
+    align-items: center; /* Align checkbox and label on the same line */
+    width: 100%; /* Let the width be flexible */
+    max-width: 25rem; /* Max width if needed */
+}
+
+.checkbox label {
+    font-size: 1.25rem;
+    white-space: nowrap; /* Prevent text wrapping */
+    margin-left: 0.5rem; /* Add some space between the checkbox and label */
+}
+
+.checkbox input {
+    height: 1.25rem;
+    width: 10%;
+    border: none;
+}
+
+
+
+button {
+    background-color: rgba(114, 219, 115, 1);
+    text-align: center;
+    width: 100%; /* Set width to 100% for responsiveness */
+    max-width: 25rem; /* Limit max width */
+    height: 3rem;
+    color: white;
+    border-radius: 2rem;
+    font-size: 1.5rem;
+    font-weight: bolder;
+}
+
+span {
+    color: red;
+    text-align: left;
+    margin-top: 0px;
+    width: 100%;
+    
+}
+
+/* Media queries for responsiveness */
+@media screen and (max-width: 768px) {
+    form {
+        width: 100%; /* Ensure the form takes full width on smaller screens */
+    }
+
+    input, button {
+        width: 90%; /* Reduce width to fit smaller screens */
+    }
+
+    .checkbox {
+        width: 90%; /* Adjust checkbox width */
+    }
+}
